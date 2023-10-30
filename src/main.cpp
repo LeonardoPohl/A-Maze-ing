@@ -2,11 +2,13 @@
 
 #include <iostream>
 
-using namespace std;
+#include "maze.h"
 
 int main(int argc, char **argv)
 {
-    cout << "Hello World!" << endl;
+    Maze maze{10, 10};
+    maze.printMaze();
+    maze.regenerateMaze();
 
-    cin.get();
+    std::cin.get()
 }
